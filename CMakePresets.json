@@ -1,0 +1,22 @@
+{
+  "version": 5,
+  "configurePresets": [
+    {
+      "name": "Debug",
+      "generator": "Ninja",
+      "binaryDir": "out",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "build-all",
+      "configurePreset": "Debug"
+    }
+  ]
+}
